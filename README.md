@@ -26,7 +26,7 @@ We inherit the license from Paper. See [Paper's License](https://github.com/Pape
 
 ## Credits
 
-* **anarxyyyy** - Plywood author and maintainer
+* **Anarxyyyy** - Plywood author and maintainer
 * [CardboardPowered](https://github.com/CardboardPowered/) - Original Cardboard mod and contributors
 * [BukkitTeam](https://bukkit.org/), [Spigot](https://spigotmc.org/), [Paper](https://papermc.io/), [Purpur](https://purpurmc.org/), and [Folia](https://github.com/PaperMC/Folia) for their work on the APIs
 * [Glowstone](https://glowstone.net) for the library loader
