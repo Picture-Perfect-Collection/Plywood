@@ -1,0 +1,57 @@
+# Purpur-compatible configuration for Plywood
+# See https://purpurmc.org/docs/Configuration/ for details
+
+config-version: 1
+verbose: false
+
+settings:
+  server-name: Unknown Server
+  lagging-threshold: 19
+  use-alternate-keepalive: false
+
+  blocks:
+    ender_chest:
+      six-rows: false
+      use-permissions-for-rows: false
+
+  afk:
+    enabled: false
+    timeout: 0
+    kick:
+      enabled: false
+    broadcast:
+      enabled: true
+      away: "&e%s is now AFK"
+      back: "&e%s is no longer AFK"
+
+  ridables:
+    enabled: false
+
+world-settings:
+  default:
+    ridables:
+      enabled: false
+      in-water: false
+    mobs:
+      can-always-burn-in-day: false
+      zombie:
+        aggressive-towards-villager: true
+      iron_golem:
+        health-max: 100
+        can-swim: false
+      villager:
+        lobotomize:
+          enabled: false
+          check-interval: 100
+      llama:
+        join-caravan: true
+      bee:
+        friendly-bees: false
+        breeding-ticks: 6000
+      phantom:
+        flames:
+          enabled: false
+      creeper:
+        charged-chance:
+          enabled: false
+          percent: 0.0

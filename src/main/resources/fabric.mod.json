@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "plywood",
+  "version": "${version}",
+
+  "name": "Plywood",
+  "description": "A comprehensive implementation of the Bukkit/Spigot/Paper/Purpur API for Fabric. Fork of Cardboard.",
+  "authors": [
+    "anarxyyyy",
+    "Isaiah (Cardboard)",
+    "CardboardPowered Contributors"
+  ],
+  "contact": {
+    "sources": "https://github.com/anarxyyyy/plywood"
+  },
+
+  "license": "GPLv3",
+  "icon": "assets/fabricbukkit/icon.png",
+  "accessWidener" : "bukkitfabric.accesswidener",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.javazilla.bukkitfabric.BukkitFabricMod"
+    ]
+  },
+  "mixins": [
+    "bukkitfabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "fabric-api": "*",
+    "java": ">=21",
+    "icommon": "*",
+    "minecraft": ">=1.21.11"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/server/MinecraftServer": ["org/cardboardpowered/bridge/server/MinecraftServerBridge"],
+      "net/minecraft/class_1297": ["org/cardboardpowered/bridge/world/entity/EntityBridge"],
+      "net/minecraft/class_3222": ["org/cardboardpowered/bridge/server/level/ServerPlayerBridge"],
+      "net/minecraft/class_1937": ["org/cardboardpowered/bridge/world/level/LevelBridge"],
+      "net/minecraft/class_3218": ["org/cardboardpowered/bridge/server/level/ServerLevelBridge"],
+      "net/minecraft/class_3248": ["org/cardboardpowered/bridge/server/network/ServerLoginPacketListenerImplBridge"]
+    }
+  }
+
+}
